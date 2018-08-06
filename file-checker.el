@@ -6,6 +6,8 @@
 
 (defun file-checker-cond ()
   (interactive)
-  (cond ((file-exists-p "~/Documents/")
-         (message "aruyo"))))
+  (cond ((file-exists-p "~/Naiyo/")
+         nil)
+        (t
+         (message "naiyo"))))
 (provide 'file-checker-cond)
