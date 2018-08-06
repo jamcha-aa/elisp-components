@@ -3,3 +3,9 @@
   (when (file-exists-p "~/Documents/")
     (message "aruyo")))
 (provide 'file-checker)
+
+(defun file-checker-cond ()
+  (interactive)
+  (cond ((file-exists-p "~/Documents/")
+         (message "aruyo"))))
+(provide 'file-checker)
