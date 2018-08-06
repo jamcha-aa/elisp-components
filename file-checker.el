@@ -8,4 +8,4 @@
   (interactive)
   (cond ((file-exists-p "~/Documents/")
          (message "aruyo"))))
-(provide 'file-checker)
+(provide 'file-checker-cond)
