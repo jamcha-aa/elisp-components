@@ -2,7 +2,6 @@
   (interactive)
   (when (file-exists-p "~/Documents/")
     (message "aruyo")))
-(provide 'file-checker)
 
 (defun file-checker-cond ()
   (interactive)
@@ -10,4 +9,10 @@
          nil)
         (t
          (message "naiyo"))))
-(provide 'file-checker-cond)
+
+(defun file-checker-summary ()
+  (interactive)
+  (when (locate-file "SUMMARY.md" '("."))
+    (message "aruyo")))
+
+(provide 'file-checker)
